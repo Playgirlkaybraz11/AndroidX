@@ -8,7 +8,7 @@ namespace AndroidBinderator
 {
 	public static class Extensions
 	{
-		public static string OrEmpty (this string value) => value ?? string.Empty;
+		public static string OrEmpty (this string? value) => value ?? string.Empty;
 
 		public static string GroupAndArtifactId (this Dependency dependency) => $"{dependency.GroupId}.{dependency.ArtifactId}";
 
